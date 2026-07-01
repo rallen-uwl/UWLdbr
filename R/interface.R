@@ -25,7 +25,7 @@ get_db_from_name <- function(db) {
     stop("Unknown database .", db, call. = FALSE)
   }
 
-  readr::read_csv(paste0("https://raw.githubusercontent.com/rallen-uwl/uwldb/main/", db, ".csv")) |>
+  readr::read_csv(paste0("https://raw.githubusercontent.com/rallen-uwl/uwldb/main/", db, ".csv"), show_col_types = FALSE) |>
     format_columns ()
 }
 
@@ -51,7 +51,7 @@ get_student_program_db <- function(filename = NA) {
   ext <- tolower(tools::file_ext(file))
 
   handler_list <- list(
-    csv = list(routine = readr::read_csv, options = list(file = file)),
+    csv = list(routine = readr::read_csv, options = list(file = file, show_col_types = FALSE)),
     xls = list(routine = readxl::read_excel, options = list(path = file, skip = 1)),
     xlsx = list(routine = readxl::read_excel, options = list(path = file, skip = 1))
   )
