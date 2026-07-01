@@ -21,9 +21,9 @@ get_program_name_db <- function() {
 #' @export
 get_student_program_db <- function(filename = NA) {
   if (is.na(filename)) {
-    stop("UWLdbr::get_student_program_db - current version requires file to create database.")
+    stop("current version requires file to create database.")
   } else {
-    file <- normalizePath(filename, mustwork = TRUE)
+    file <- normalizePath(filename, mustWork = TRUE)
     ext <- tolower(tools::file_ext(file))
 
     handlers <- list(
