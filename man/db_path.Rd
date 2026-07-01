@@ -7,5 +7,5 @@
 db_path
 }
 \description{
-path to Github repository for UWL database csv files
+internal variable
 }
