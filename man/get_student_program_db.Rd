@@ -3,7 +3,7 @@
 \name{get_student_program_db}
 \alias{get_student_program_db}
 \title{Get UWL student program data
-currently from WINGS report UWL_SR_DAC_SUBJECT_IR_ALL}
+currently from WINGS report UWL_SR_REQ_TERM_BY_COLLEGE}
 \usage{
 get_student_program_db(filename = NA)
 }
@@ -12,5 +12,5 @@ A dataframe containing student program information.
 }
 \description{
 Get UWL student program data
-currently from WINGS report UWL_SR_DAC_SUBJECT_IR_ALL
+currently from WINGS report UWL_SR_REQ_TERM_BY_COLLEGE
 }

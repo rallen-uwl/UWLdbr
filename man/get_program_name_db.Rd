@@ -2,7 +2,7 @@
 % Please edit documentation in R/interface.R
 \name{get_program_name_db}
 \alias{get_program_name_db}
-\title{Get UWL program name data}
+\title{Get UWL program names database}
 \usage{
 get_program_name_db()
 }
@@ -10,5 +10,5 @@ get_program_name_db()
 A dataframe containing program name database.
 }
 \description{
-Get UWL program name data
+Get UWL program names database
 }
