@@ -39,8 +39,8 @@ get_student_program_db <- function(filename = NA) {
     }
 
     handler(file) |>
-      dplyr::select(-dplyr::all_of(dplyr::starts_with("..."))) %>%
-      dplyr::select_all(~ gsub("\\s+|\\.|\\..|\\...", ".", .)) %>%
+      dplyr::select(-dplyr::all_of(dplyr::starts_with("..."))) |>
+      dplyr::select_all(~ gsub("\\s+|\\.|\\..|\\...", ".", .)) |>
       dplyr::select_all(tolower)
   }
 }
