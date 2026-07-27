@@ -16,7 +16,6 @@ pre_professional_track_alias_lookup <- tibble::tribble(
   "pre pa", "PA.PRE2",
   "pre physicians assistant", "PA.PRE2",
   "pre physicians assistnt track", "PA.PRE2",
-  "pre nmt", "NMT.PRE2",
   "pre dentistry", "DENT.PRE2",
   "pre dentistry track", "DENT.PRE2",
 )
