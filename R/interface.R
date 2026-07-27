@@ -22,7 +22,7 @@ get_lookup_names <- function() {
 #' @export
 get_lookup_by_name <- function(lookup_name) {
   if (! lookup_name %in% UWLdbr::get_lookup_names()) {
-    stop("Unknown lookup .", lookup_name, call. = FALSE)
+    stop("Unknown lookup: ", lookup_name, call. = FALSE)
   }
 
   switch(lookup_name,
