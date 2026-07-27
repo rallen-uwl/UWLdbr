@@ -49,8 +49,6 @@ get_db_from_name <- function(db) {
     stop("Unknown database .", db, call. = FALSE)
   }
 
-  print(db)
-
   readr::read_csv(paste0("https://raw.githubusercontent.com/rallen-uwl/uwldb/main/", db, ".csv"), show_col_types = FALSE) |>
     UWLdbr::format_columns()
 }
