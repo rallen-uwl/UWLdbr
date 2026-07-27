@@ -8,6 +8,30 @@ format_columns <- function(db) {
     dplyr::select_all(tolower)
 }
 
+#' Get the name of the available lookup tables
+#'
+#' @return A column of lookup table names.
+#' @export
+get_lookup_names <- function() {
+  return (c("general_education", "discipline", "subject"))
+}
+
+#' Get lookup table from name
+#'
+#' @return A dataframe containing lookup table.
+#' @export
+get_lookup_by_name <- function(lookup_name) {
+  if (! lookup_name %in% UWLdbr::get_lookup_names()) {
+    stop("Unknown lookup .", lookup_name, call. = FALSE)
+  }
+
+  switch(lookup_name,
+         "general_education" = UWLdbr::general_education_category_lookup,
+         "disipline" = UWLdbr::discipline_lookup,
+         "subject" = UWLdbr::subject_lookup
+  )
+}
+
 #' Get the names of the accessible databases
 #'
 #' @return a list of database names
@@ -21,12 +45,12 @@ get_database_names <- function() {
 #' @return A dataframe containing database.
 #' @export
 get_db_from_name <- function(db) {
-  if(! db %in% get_database_names()) {
+  if(! db %in% UWLdbr::get_database_names()) {
     stop("Unknown database .", db, call. = FALSE)
   }
 
   readr::read_csv(paste0("https://raw.githubusercontent.com/rallen-uwl/uwldb/main/", db, ".csv"), show_col_types = FALSE) |>
-    format_columns ()
+    UWLdbr::format_columns()
 }
 
 #' Get UWL program names database
@@ -34,7 +58,7 @@ get_db_from_name <- function(db) {
 #' @return A dataframe containing program name database.
 #' @export
 get_program_name_db <- function() {
-  get_db_from_name("program_names_db")
+  UWLdbr::get_db_from_name("program_names_db")
 }
 
 #' Get UWL student program data

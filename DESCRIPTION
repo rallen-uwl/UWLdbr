@@ -22,3 +22,4 @@ Imports:
     stringr,
     tidyselect
 Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.2.3
