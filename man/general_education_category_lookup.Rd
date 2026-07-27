@@ -2,10 +2,10 @@
 % Please edit documentation in R/lookup.R
 \name{general_education_category_lookup}
 \alias{general_education_category_lookup}
-\title{General Eduation Category lookup table}
+\title{General Education Category lookup table}
 \usage{
 general_education_category_lookup
 }
 \description{
-General Eduation Category lookup table
+General Education Category lookup table
 }
