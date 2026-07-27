@@ -1,4 +1,27 @@
 #' General Eduation Category lookup table
+pre_professional_track_alias_lookup <- tibble::tribble(
+  ~alias, ~program,
+  "pre pt", "PT.PRE2",
+  "physical therapy", "PT.PRE2",
+  "pre physical therapy", "PT.PRE2",
+  "pre physical therapy track", "PT.PRE2",
+  "pre med", "MD.PRE2",
+  "pre medicine", "MD.PRE2",
+  "pre medicine track", "MD.PRE2",
+  "pre vet", "VET.PRE2",
+  "pre veterinary science", "VET.PRE2",
+  "pre veterinary science track", "VET.PRE2",
+  "pre genetic counseling", "GC.PRE2",
+  "pre genetic counseling track", "GC.PRE2",
+  "pre pa", "PA.PRE2",
+  "pre physicians assistant", "PA.PRE2",
+  "pre physicians assistnt track", "PA.PRE2",
+  "pre nmt", "NMT.PRE2",
+  "pre dentistry", "DENT.PRE2",
+  "pre dentistry track", "DENT.PRE2",
+)
+
+#' General Education Category lookup table
 general_education_category_lookup <- tibble::tribble(
   ~gen.ed.or.writing.emphasis, ~gen.ed.category.name,
   "C1Q", "Quantitative Reasoning",

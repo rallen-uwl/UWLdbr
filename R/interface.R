@@ -13,7 +13,7 @@ format_columns <- function(db) {
 #' @return A column of lookup table names.
 #' @export
 get_lookup_names <- function() {
-  return (c("general_education", "discipline", "subject"))
+  return (c("general_education", "discipline", "subject", "pre_professional_track_alias"))
 }
 
 #' Get lookup table from name
@@ -28,7 +28,8 @@ get_lookup_by_name <- function(lookup_name) {
   switch(lookup_name,
          "general_education" = UWLdbr::general_education_category_lookup,
          "disipline" = UWLdbr::discipline_lookup,
-         "subject" = UWLdbr::subject_lookup
+         "subject" = UWLdbr::subject_lookup,
+         "pre_professional_track_alias" = UWLdbr::pre_professional_track_alias_lookup
   )
 }
 
