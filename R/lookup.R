@@ -27,8 +27,6 @@ pre_professional_track_alias_lookup <- tibble::tribble(
   "pre engineering track", "ENGR.PRE2",
   "pre forestry", "FORST.PRE2",
   "pre forestry track", "FORST.PRE2",
-  "pre health", "HLTH.PRE2",
-  "pre health track", "HLTH.PRE2",
   "pre law", "LAW.PRE2",
   "pre law track", "LAW.PRE2",
   "pre optometry", "OPT.PRE2",
