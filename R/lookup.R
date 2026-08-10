@@ -39,7 +39,7 @@ pre_professional_track_alias_lookup <- tibble::tribble(
   "pre peace corps", "PEACE.PRE2",
   "pre peace corps track", "PEACE.PRE2",
   "pre pharmacy", "PHARM.PRE2",
-  "pre pharmacy track", "PHARM.PRE2"
+  "pre pharmacy track", "PHARM.PRE2",
 )
 
 #' General Education Category lookup table
