@@ -18,6 +18,28 @@ pre_professional_track_alias_lookup <- tibble::tribble(
   "pre physicians assistnt track", "PA.PRE2",
   "pre dentistry", "DENT.PRE2",
   "pre dentistry track", "DENT.PRE2",
+  "pre clinical exercise physiology track", "CEP.PRE2",
+  "pre clinical exerc phys track", "CEP.PRE2",
+  "pre clinical exercise physiology", "CEP.PRE2",
+  "pre chiropractic", "CHIRO.PRE2",
+  "pre chiropractic track", "CHIRO.PRE2",
+  "pre engineering", "ENGR.PRE2",
+  "pre engineering track", "ENGR.PRE2",
+  "pre forestry", "FOREST.PRE2",
+  "pre forestry track", "FOREST.PRE2",
+  "pre health", "HLTH.PRE2",
+  "pre health track", "HLTH.PRE2",
+  "pre law", "LAW.PRE2",
+  "pre law track", "LAW.PRE2",
+  "pre optometry", "OPT.PRE2",
+  "pre optometry track", "OPT.PRE2",
+  "pre occupational therapy", "OT.PRE2",
+  "pre occupational therapy track", "OT.PRE2",
+  "pre ot", "TO.PRE2",
+  "pre peace corps", "PEACE.PRE2",
+  "pre peace corps track", "PEACE.PRE2",
+  "pre pharmacy", "PHARM.PRE2",
+  "pre pharmacy track", "PHARM.PRE2"
 )
 
 #' General Education Category lookup table
